@@ -9,22 +9,26 @@ figure, figcaption, hgroup {
 body {
 	text-align: center;
 	margin: 0px 0px auto; 
-	width: 960px; 
+	width: 1185px; 
 	padding: 0px auto, 
 }
 
 #agrupar {
-	width: 960px;
+	width: 100%;
 	margin: 15px auto;
 	text-align: center;
 }
 
 #encabezado {
+	display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+
+	width: 100%;
 	background: #5b7989;
 	color: #ffffff;
 	font: bold 10px verdana, sans-serif;
 	text-shadow: #02010a 2px 2px 2px;
-	text-align: left;
 	padding: 0px auto;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
@@ -34,17 +38,30 @@ body {
 }
 
 #cabecera {
-	display: inline-block;
+	float: left;
+	display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
 }
 
 #menu {
-	display: inline-block;
-	padding: 0px auto;
+	float: right;
+	right: 0;
+	margin-top: 10px;
+
+	display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
 }
 
 #menu li {
 	display: inline-block;
 	list-style: none;
-	padding: 0px auto;
-	font: bold 15px verdana, sans-serif;
+	font: bold 16px verdana, sans-serif;
+}
+
+footer {
+	clear: both;
+	/*position: fixed;
+	bottom: 0;*/
 }
