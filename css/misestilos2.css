@@ -20,7 +20,6 @@ body {
 }
 
 #encabezado {
-	display: inline-block;
 	background: #5b7989;
 	color: #ffffff;
 	font: bold 10px verdana, sans-serif;
@@ -31,6 +30,7 @@ body {
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border: 10px solid #000000;
+	display: inline-block;
 }
 
 #cabecera {
@@ -39,13 +39,12 @@ body {
 
 #menu {
 	display: inline-block;
-	background: #CCCCCC;
 	padding: 0px auto;
 }
 
 #menu li {
 	display: inline-block;
 	list-style: none;
-	padding: 5px auto;
-	font: bold 10px verdana, sans-serif;
+	padding: 0px auto;
+	font: bold 15px verdana, sans-serif;
 }
