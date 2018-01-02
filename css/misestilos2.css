@@ -8,10 +8,9 @@ figure, figcaption, hgroup {
 
 body {
 	text-align: center;
-	clear: both;
-	margin: 0px auto; 
+	margin: 0px 0px auto; 
 	width: 960px; 
-	padding: 0px, 
+	padding: 0px auto, 
 }
 
 #agrupar {
@@ -20,29 +19,33 @@ body {
 	text-align: center;
 }
 
-#cabecera {
+#encabezado {
 	display: inline-block;
 	background: #5b7989;
 	color: #ffffff;
-	font: bold 1em verdana, sans-serif;
+	font: bold 10px verdana, sans-serif;
 	text-shadow: #02010a 2px 2px 2px;
 	text-align: left;
-	padding: 0px;
+	padding: 0px auto;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border: 10px solid #000000;
 }
 
+#cabecera {
+	display: inline-block;
+}
+
 #menu {
 	display: inline-block;
 	background: #CCCCCC;
-	padding: 0px;
+	padding: 0px auto;
 }
 
 #menu li {
 	display: inline-block;
 	list-style: none;
-	padding: 5px;
-	font: bold 14px verdana, sans-serif;
+	padding: 5px auto;
+	font: bold 10px verdana, sans-serif;
 }
