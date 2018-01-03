@@ -1,0 +1,162 @@
+/*****  PROYECTO FINAL UDEMY - CURSO CSS  *****/
+/***** Diseño de Miguel Angel Diaz Solana *****/
+
+header, section, footer, aside, nav, article,
+figure, figcaption, hgroup {
+	display: block;
+}
+
+/*body {
+	margin: 0px 0px auto;
+	width: 1185px;
+}*/
+
+.cuerpo {
+	margin-left: 1em;
+	margin-right: 1em;
+	text-align: center;
+	padding: 0em auto;
+}
+
+.agrupar {
+	width: 100%;
+	margin: 2px auto;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.agrupar div {
+	box-sizing: border-box;
+	min-width: 150px; /*No tocar*/
+	padding: 0px;
+}
+
+.encabezado {
+	width: 100%;
+	background: #5b7989;
+	color: #ffffff;
+	font: bold 10px verdana, sans-serif;
+	text-shadow: #02010a 2px 2px 2px;
+	padding: 0px auto;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 10px solid #000000;
+	display: inline-block;
+}
+
+.cabecera {
+	text-align: left;
+	width: 100%;
+}
+
+.titulo {
+	float: left;
+	font-size: 2em;
+	font-family: verdana, sans-serif;
+	display: inline-block;
+}
+
+#menu {
+	float: right;
+	right: 0;
+	margin-top: 10px;
+}
+
+#menu li {
+	font-size: 2em;
+	font-family: verdana, sans-serif;
+	display: inline-block;
+	list-style: none;
+}
+
+.agrupar, .encabezado, .cabecera {
+	width: 100%;
+}
+
+@media (max-width: 1000px) {
+	.cuerpo	{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.titulo {
+		font-size: 1.6em;
+		font-family: verdana;
+	}
+
+	#menu li {
+		font-size: 1.6em;
+		font-family: verdana;
+	}
+}
+
+@media (max-width: 600px) {
+	.cuerpo	{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.titulo {
+		font-size: 1.3em;
+		font-family: verdana;
+	}
+
+	#menu li {
+		font-size: 1.3em;
+		font-family: verdana;
+	}
+}
+
+
+/*
+@media (min-width: 1100px) {
+	.encabezado {
+		width: 100%;
+	}
+
+	.cabecera {
+		width: 100%;
+	}
+
+	#menu {
+		width: 100%;
+	}
+
+	.agrupar {
+		width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 550px) {
+	.encabezado {
+		width: 50%;
+	}
+
+	.cabecera {
+		width: 50%;
+	}
+
+	#menu {
+		width: 50%;
+	}
+
+	.agrupar {
+		width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+*/
+
+footer {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+}
