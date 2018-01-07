@@ -1,4 +1,4 @@
-/*****  PROYECTO FINAL UDEMY - CURSO CSS  *****/
+/***** PROYECTO FINAL UDEMY - CURSO CSS3  *****/
 /***** Diseño de Miguel Angel Diaz Solana *****/
 
 header, section, footer, aside, nav, article,
@@ -6,21 +6,18 @@ figure, figcaption, hgroup {
 	display: block;
 }
 
-/*body {
-	margin: 0px 0px auto;
-	width: 1185px;
-}*/
-
-.cuerpo {
-	margin-left: 1em;
-	margin-right: 1em;
-	text-align: center;
-	padding: 0em auto;
+@font-face {
+	font-family: 'Dancing Script', cursive;
 }
 
-.agrupar {
-	width: 100%;
-	margin: 2px auto;
+body { /* No tocar */
+	text-align: center; 
+	background-color: gray;
+}
+
+.contenido { /*No tocar*/
+	max-width: 900px; /*No tocar*/
+	margin: 0px auto; /*No tocar*/
 	text-align: center;
 	display: -webkit-flex;
 	display: flex;
@@ -28,92 +25,89 @@ figure, figcaption, hgroup {
 	flex-flow: row wrap;
 }
 
-.agrupar div {
+.contenido div { /*No tocar*/
 	box-sizing: border-box;
-	min-width: 150px; /*No tocar*/
+	min-width: 375px; 
 	padding: 0px;
 }
 
 .encabezado {
-	width: 100%;
+	width: 100%; /*No tocar*/
 	background: #5b7989;
+	font-family: verdana, sans-serif;
 	color: #ffffff;
 	font: bold 10px verdana, sans-serif;
 	text-shadow: #02010a 2px 2px 2px;
-	padding: 0px auto;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border: 10px solid #000000;
-	display: inline-block;
 }
 
-.cabecera {
+.cabecera { /*No tocar*/
 	text-align: left;
 	width: 100%;
+	margin-left: 10px; /*No tocar*/
 }
 
-.titulo {
-	float: left;
-	font-size: 2em;
-	font-family: verdana, sans-serif;
-	display: inline-block;
+.titulo { /*No tocar*/
+	float: left; /*No tocar*/
+	font-size: 4em; /*1em=16px*/
+	font-family: 'Dancing Script', cursive;
 }
 
 #menu {
 	float: right;
-	right: 0;
-	margin-top: 10px;
+	margin-top: 35px;
 }
 
 #menu li {
-	font-size: 2em;
-	font-family: verdana, sans-serif;
-	display: inline-block;
+	font-size: 3em; /*1em=16px*/
+	display: inline-block; /*No tocar*/
 	list-style: none;
+	margin-right: 10px;
+	font-family: 'Dancing Script', cursive;
 }
 
-.agrupar, .encabezado, .cabecera {
+/*********************************/
+
+.cuerpo, .contenido, .encabezado, .cabecera {
+	/*No inluir .titulo*/
 	width: 100%;
 }
 
-@media (max-width: 1000px) {
-	.cuerpo	{
-		margin-left: 1em;
-		margin-right: 1em;
+@media only screen and (max-width: 900px) {
+	.contenido {
+		margin-left: auto;
+	}
+
+	.encabezado {
+		width: 100%;
+		margin-right: 15px;
+	}
+
+	.cabecera {
+		width: 100%;
 	}
 
 	.titulo {
-		font-size: 1.6em;
-		font-family: verdana;
+		font-size: 2.5em;
+	}
+
+	#menu {
+		margin-top: 18px; /*No tocar*/
 	}
 
 	#menu li {
-		font-size: 1.6em;
-		font-family: verdana;
+		font-size: 2.0em;
 	}
 }
 
-@media (max-width: 600px) {
-	.cuerpo	{
-		margin-left: 1em;
-		margin-right: 1em;
+@media only screen and (max-width: 375px) {
+	.contenido {
+		margin-left: auto;
 	}
 
-	.titulo {
-		font-size: 1.3em;
-		font-family: verdana;
-	}
-
-	#menu li {
-		font-size: 1.3em;
-		font-family: verdana;
-	}
-}
-
-
-/*
-@media (min-width: 1100px) {
 	.encabezado {
 		width: 100%;
 	}
@@ -122,38 +116,19 @@ figure, figcaption, hgroup {
 		width: 100%;
 	}
 
-	#menu {
-		width: 100%;
-	}
-
-	.agrupar {
-		width: 1100px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@media (min-width: 550px) {
-	.encabezado {
-		width: 50%;
-	}
-
-	.cabecera {
-		width: 50%;
+	.titulo {
+		font-size: 2em;
 	}
 
 	#menu {
-		width: 50%;
+		margin-top: 0px; /*No tocar*/
 	}
 
-	.agrupar {
-		width: 550px;
-		margin-left: auto;
-		margin-right: auto;
+	#menu li {
+		font-size: 1.8em;
+		margin-right: 15px;
 	}
 }
-
-*/
 
 footer {
 	clear: both;
