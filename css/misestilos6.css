@@ -12,7 +12,7 @@ figure, figcaption, hgroup {
 
 body { /* No tocar */
 	text-align: center; 
-	background-color: gray;
+	background-color: #02010a;
 }
 
 .contenido { /*No tocar*/
@@ -41,7 +41,8 @@ body { /* No tocar */
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	border: 10px solid #000000;
+	border: 10px solid gray;
+;
 }
 
 .cabecera { /*No tocar*/
@@ -128,6 +129,25 @@ body { /* No tocar */
 		font-size: 1.8em;
 		margin-right: 15px;
 	}
+}
+
+ .fotos{
+	width: 100%;
+  	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  	/*box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 2px 2px 0 rgba(0, 0, 0, 0.19);*/
+  	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 2px 2px 2px 0 #02010a;
+  	/*box-shadow: 2px 2px;*/
+  	text-align: center;
+    padding: 1px;
+    /*box-shadow: 2px 2px 2px 2px #02010a;*/
+    background-color: white;
+}
+}
+
+#boxshadow img {
+    width: 100%;
+    border: 1px solid #8a4419;
+    border-style: inset;
 }
 
 footer {
