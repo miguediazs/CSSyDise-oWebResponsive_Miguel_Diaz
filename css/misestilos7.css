@@ -1,0 +1,122 @@
+/***** PROYECTO FINAL UDEMY - CURSO CSS3  *****/
+/***** Diseño de Miguel Angel Diaz Solana *****/
+
+header, section, footer, aside, nav, article,
+figure, figcaption, hgroup {
+	display: block;
+}
+
+*
+{
+	margin: 0;
+}
+
+body { /* No tocar */
+	text-align: center; 
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+
+.c1 {
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	background: #5b7989;
+	text-align: left;
+	font-size: 1em; /*1em=16px*/
+	text-shadow: #02010a 2px 2px 2px;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 10px solid gray;
+}
+
+#menu {
+	float: right;
+	display: inline-block; /*No tocar*/
+	margin-top: 7px;
+}
+
+#menu li {
+	font-size: 1.5em; /*1em=16px*/
+	display: inline-block; /*No tocar*/
+	list-style: none;
+	margin-right: 10px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.c2 {
+	color: black;
+	background-color: #82c3a6;
+}
+
+.fotos{
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	/*box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 2px 2px 0 rgba(0, 0, 0, 0.19);*/
+  	/*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 2px 2px 2px 0 #02010a;*/
+    /*box-shadow: 2px 2px 2px 2px #02010a;*/
+}
+
+.c3 {
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.c4 {
+	color: black;
+	background-color: #36C9C6;
+}
+
+.c5 {
+	color: white;
+	background-color: #ED6A5A;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.c2, .c3, .c4, .c5 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	.c1 {
+		width: 100%;
+	}
+
+	.c2 {
+		width: 100%;
+	}
+
+	.c3, .c4, .c5 {
+		width: 33.33%;
+	}
+
+	.container {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

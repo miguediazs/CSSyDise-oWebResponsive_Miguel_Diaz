@@ -6,6 +6,11 @@ figure, figcaption, hgroup {
 	display: block;
 }
 
+*
+{
+	margin: 0;
+}
+
 @font-face {
 	font-family: 'Dancing Script', cursive;
 }
@@ -13,6 +18,12 @@ figure, figcaption, hgroup {
 body { /* No tocar */
 	text-align: center; 
 	background-color: #02010a;
+}
+
+#wrapper
+{
+	width: 900px;
+	margin: 0 auto;
 }
 
 .contenido { /*No tocar*/
@@ -23,6 +34,8 @@ body { /* No tocar */
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .contenido div { /*No tocar*/
@@ -42,7 +55,6 @@ body { /* No tocar */
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border: 10px solid gray;
-;
 }
 
 .cabecera { /*No tocar*/
@@ -68,6 +80,7 @@ body { /* No tocar */
 	list-style: none;
 	margin-right: 10px;
 	font-family: 'Dancing Script', cursive;
+	style="list-style-type:none;
 }
 
 /*********************************/
@@ -133,6 +146,7 @@ body { /* No tocar */
 
  .fotos{
 	width: 100%;
+	float: center;
   	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   	/*box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 2px 2px 0 rgba(0, 0, 0, 0.19);*/
   	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 2px 2px 2px 0 #02010a;
@@ -140,7 +154,7 @@ body { /* No tocar */
   	text-align: center;
     padding: 1px;
     /*box-shadow: 2px 2px 2px 2px #02010a;*/
-    background-color: white;
+    background-color: #82c3a6;
 }
 }
 
@@ -154,4 +168,53 @@ footer {
 	clear: both;
 	position: fixed;
 	bottom: 0;
+}
+
+/** ********** **/
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
