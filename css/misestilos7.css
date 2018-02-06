@@ -1,4 +1,4 @@
-/***** PROYECTO FINAL UDEMY - CURSO CSS3  *****/
+/*****      CSS Y DISEÑO RESPONSIVO       *****/
 /***** Diseño de Miguel Angel Diaz Solana *****/
 
 header, section, footer, aside, nav, article,
@@ -6,75 +6,74 @@ figure, figcaption, hgroup {
 	display: block;
 }
 
-*
-{
+* {
 	margin: 0;
 }
 
-body { /* No tocar */
+body { /* Ok */
 	background-color: #02010a;
 	font-family: 'Dancing Script', cursive;
 }
 
-.container {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	display: -webkit-flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-}
-.container div {
-	box-sizing: border-box;
-	min-width: 150px;
-	padding: 20px;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+#contenido { /*Ok*/
+	margin-left: auto;
+  	margin-right: auto;
 }
 
-.c1 {
+header {
 	display: flex;
-	justify-content: space-around;
-	color: white;
-	background: #5b7989;
-	text-align: left;
-	font-size: 1em; /*1em=16px*/
-	text-shadow: #02010a 2px 2px 2px;
+	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	border: 10px solid gray;
 }
 
-#menu {
-	float: right;
-	display: inline-block; /*No tocar*/
-	margin-top: 7px;
+/*	
+height: 80px;
+order: 0;
+animation: miSlideIn 1s;
+	width: 100%;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-around; */
+
+header #titulo {
+	width: 100%;
+	min-width: 150px;
+	padding: 20px;
+	align-items: left;
+	background-color: #5b7989;
+	text-shadow: #02010a 2px 2px 2px;
+	color: white;
 }
 
-#menu li {
-	font-size: 1.5em; /*1em=16px*/
-	display: inline-block; /*No tocar*/
-	list-style: none;
-	margin-right: 10px;
-	font-family: 'Dancing Script', cursive;
+header #menu {
+	width: 100%;
+	font-size: 1.5em;
+	padding-right: 20px;
+	text-align: right;
+	padding-top: 25px;
 }
 
+.opcion {
+	text-decoration: none;
+	color: white;
+	text-shadow: #02010a 2px 2px 2px;
+}
+
+/*
 .c2 {
 	color: black;
 	background-color: #82c3a6;
-}
+} */
 
 .foto_principal{
   	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 2px 2px 2px 2px #02010a;
  }
+
 
 .c3 {
 	width: 100%;
@@ -115,7 +114,7 @@ body { /* No tocar */
 		width: 33.33%;
 	}
 
-	.container {
+	#contenido {
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
