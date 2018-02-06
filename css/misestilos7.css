@@ -53,6 +53,10 @@ header #menu {
 	text-shadow: #02010a 2px 2px 2px;
 }
 
+#secundarias {
+	display: flex;
+}
+
 #foto_principal {
 	color: black;
 	background-color: #82c3a6;
@@ -69,14 +73,13 @@ header #menu {
 
 #foto_a{
 	float: left;
-	width: 50%;
-	height: 50%;
 	text-align: center;
 	padding: 15px;
   	background-color: #d5c75f;
  }
 
 #foto_a img {
+	width: 100%;
 	border: 1px solid;
   	box-shadow: 1px 1px 1px 1px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
@@ -85,14 +88,13 @@ header #menu {
 
 #foto_b{
 	float: right;
-	width: 50%;
-	height: 50%;
 	text-align: center;
 	padding: 15px;
   	background-color: #d5c75f;
  }
 
  #foto_b img {
+ 	width: 100%;
  	border: 1px solid;
   	box-shadow: 1px 1px 1px 1px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
@@ -109,12 +111,6 @@ animation: miSlideIn 1s;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	justify-content: space-around; */
-
-
-
-.c3 {
-	
-}
 
 .c1, .c2, .c3 {
 	width: 100%;
