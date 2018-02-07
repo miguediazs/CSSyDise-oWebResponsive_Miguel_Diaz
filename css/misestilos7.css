@@ -10,134 +10,187 @@ figure, figcaption, hgroup {
 	margin: 0;
 }
 
-body { /* Ok */
+body {
 	background-color: #02010a;
 	font-family: 'Dancing Script', cursive;
+	align-items: center;
 }
 
-#contenido { /*Ok*/
+#contenido {
+	text-align: center;
+	min-width: 150px;
+	max-width: 900px;
 	margin-left: auto;
   	margin-right: auto;
 }
 
 header {
 	display: flex;
+	width: 98%;
 	background-color: #5b7989;
+	border: 10px solid gray;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	border: 10px solid gray;
+	/*animation: ascenso 3s;*/
 }
 
+@-webkit-keyframes ascenso {
+    0%{margin-top: 100%;}
+    50%{margin-top: -3%;}
+    100%{margin-top: 0;}
+}
+
+@-moz-keyframes ascenso{
+  0%{margin-top: 100%;}
+  50%{margin-top: -3%;}
+  100%{margin-top: 0;}
+} 
+
 header #titulo {
+	float: left;
+	color: white;
 	width: 100%;
-	min-width: 150px;
 	padding: 20px;
 	align-items: left;
+	font-size: 1em;
 	background-color: #5b7989;
 	text-shadow: #02010a 2px 2px 2px;
-	color: white;
 }
 
 header #menu {
 	width: 100%;
-	font-size: 1.5em;
-	padding-right: 20px;
+	font-size: 1em;
+	padding-right: 60px;
 	text-align: right;
-	padding-top: 25px;
+	padding-top: 30px;
 }
 
 .opcion {
+	font-size: 1.5em;
 	text-decoration: none;
 	color: white;
 	text-shadow: #02010a 2px 2px 2px;
 }
 
-#secundarias {
-	display: flex;
-}
-
 #foto_principal {
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	align-items: center;
 	color: black;
 	background-color: #82c3a6;
 	text-align: center;
-	padding: 15px;
+	padding: 30px;
  }
 
 #foto_principal img {
+	width: 100%;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	/*align-items: center;*/
+
+	/*border: 2px solid;*/
+  	box-shadow: 2px 2px 2px 2px #02010a;
+  	-webkit-box-shadow: 2px 2px 2px #02010a;
+  	-moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+#foto_izq{
+	width: 42%;
+	float: left;
+	text-align: center;
+	align-items: center;
+	padding: 30px;
+  	background-color: #d5c75f;
+ }
+
+#foto_izq img {
+	width: 100%;
+	float: left;
+	justify-content: space-around;
+	align-items: center;
 	border: 2px solid;
   	box-shadow: 2px 2px 2px 2px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
   	-moz-box-shadow: 2px 2px 2px #02010a;
 }
 
-#foto_a{
-	float: left;
-	text-align: center;
-	padding: 15px;
-  	background-color: #d5c75f;
- }
-
-#foto_a img {
-	width: 100%;
-	border: 1px solid;
-  	box-shadow: 1px 1px 1px 1px #02010a;
-  	-webkit-box-shadow: 2px 2px 2px #02010a;
-  	-moz-box-shadow: 2px 2px 2px #02010a;
+#foto_izq img:hover{
+  transition: all 1s;
+  transform: rotate(10deg);
 }
 
-#foto_b{
+#foto_der{
+	width: 42%;
 	float: right;
 	text-align: center;
-	padding: 15px;
+	align-items: center;
+	padding: 30px;
   	background-color: #d5c75f;
  }
 
- #foto_b img {
+ #foto_der img {
  	width: 100%;
- 	border: 1px solid;
-  	box-shadow: 1px 1px 1px 1px #02010a;
+ 	float: right;
+ 	justify-content: space-around;
+	align-items: center;
+ 	border: 2px solid;
+  	box-shadow: 2px 2px 2px 2px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
   	-moz-box-shadow: 2px 2px 2px #02010a;
  }
 
-
-/*	
-height: 80px;
-order: 0;
-animation: miSlideIn 1s;
-	width: 100%;
-	display: -webkit-flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	justify-content: space-around; */
-
-.c1, .c2, .c3 {
-	width: 100%;
+ #foto_der img:hover{
+  transition: all 1s;
+  transform: translate(20px,-5px);
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
-@media (min-width: 600px) {
-	.c2, .c3 {
-		width: 50%;
-	}
-}
 
-@media (min-width: 900px) {
-	.c1 {
-		width: 100%;
+@media (min-width: 900px){
+	#foto_izq, #foto_der {
+    width: 43.333%;
 	}
-
-	.c2 {
-		width: 100%;
-	}
-
-	.c3 {
-		width: 33.33%;
-	}
-
-	#contenido {
+    #contenido {
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	#foto_izq img, #foto_der img {
+    width: 100%;
+	}
+}
+@media (max-width: 899px) and (min-width: 800px){
+	#foto_izq, #foto_der {
+    width: 42.5%;
+	}
+    #contenido {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#foto_izq img, #foto_der img {
+    width: 100%;
+	}
+}
+
+@media (max-width: 799px) and (min-width: 350px){
+	#foto_izq, #foto_der {
+    	width: 42%;
+  	}
+  	#foto_izq img, #foto_der img {
+    	width: 100%;
+	}
+}
+
+@media (max-width: 349px) and (min-width: 150px){
+	#foto_izq, #foto_der {
+    width: 100%;
+  	}
+  	#foto_izq img, #foto_der img {
+    width: 100%;
 	}
 }
