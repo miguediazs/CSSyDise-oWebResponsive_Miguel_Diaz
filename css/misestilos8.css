@@ -11,9 +11,9 @@ figure, figcaption, hgroup {
 }
 
 body {
+	align-items: center;
 	background-color: #02010a;
 	font-family: 'Dancing Script', cursive;
-	align-items: center;
 }
 
 #contenido {
@@ -25,11 +25,11 @@ body {
 }
 
 header {
-	display: flex;
-	margin: auto;
 	width: 100%;
-	background-color: #5b7989;
+	margin: auto;
+	display: flex;
 	border: 10px solid gray;
+	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
@@ -50,18 +50,16 @@ header {
 
 header #titulo {
 	float: left;
-	color: white;
 	width: 100%;
+	color: white;
 	margin: auto;
 	align-items: left;
-	font-size: 1em;
 	background-color: #5b7989;
 	text-shadow: #02010a 2px 2px 2px;
 }
 
 header #menu {
 	width: 100%;
-	font-size: 1em;
 	padding-right: 60px;
 	text-align: right;
 	padding-top: 25px;
@@ -81,7 +79,7 @@ header #menu {
     width: 100%;
 }
 
-section #foto_principal {
+section #imagen_central {
 	width: 100%;
 	padding: 20px;
 	margin-left: auto;
@@ -93,22 +91,24 @@ section .responsive #foto_izquierda {
 	float: left;
 	width: 100%;
 	padding: 20px;
+	border: 1px solid;
 	margin-left: auto;
   	margin-right: auto;
     background-color: #d5c75f;
 }
 
 section .responsive #foto_derecha {
-	float: right;
 	width: 100%;
+	float: right;
 	padding: 20px;
+	border: 1px solid;
 	margin-left: auto;
   	margin-right: auto;
     background-color: #d5c75f;
 }
 
-section #foto_principal img {
-    width: 85%;
+section #imagen_central img {
+    width: 65%;
     height: auto;
     box-shadow: 2px 2px 2px 2px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
@@ -116,7 +116,7 @@ section #foto_principal img {
 }
 
 section .responsive #foto_izquierda img {
-    width: 100%;
+    width: 65%;
     height: auto;
     box-shadow: 2px 2px 2px 2px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
@@ -124,64 +124,32 @@ section .responsive #foto_izquierda img {
 }
 
 section .responsive #foto_derecha img {
-    width: 100%;
+    width: 65%;
     height: auto;
     box-shadow: 2px 2px 2px 2px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
   	-moz-box-shadow: 2px 2px 2px #02010a;
 }
 
-section #foto_principal:hover {
-    border: 1px solid #777;
-}
-
-section.responsive #foto_izquierda:hover {
-    border: 1px solid #777;
-}
-
-section.responsive #foto_derecha:hover {
-    border: 1px solid #777;
-}
-
 section.responsive #foto_izquierda.desc {
     padding: 15px;
-    font-size: 20px;
     text-align: center;
 }
 
 section.responsive #foto_derecha.desc {
     padding: 15px;
-    font-size: 20px;
     text-align: center;
 }
 
-@media only screen and (max-width: 1400px){
-    section .responsive #foto_izquierda, 
-    section .responsive #foto_derecha {
-        width: 50%;
-        /*margin: 6px 0;*/
-    }
-}
-
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 900px){
     section .responsive #foto_izquierda, 
     section .responsive #foto_derecha {
      	width: 50%; 
     }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 899px){
 	section .responsive #foto_izquierda, 
     section .responsive #foto_derecha {
         width: 100%;    
     }
 }
-
-/*
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-*/
-
