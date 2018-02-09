@@ -33,7 +33,7 @@ header {
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	/*animation: ascenso 3s;*/
+	animation: ascenso 3s;
 }
 
 @-webkit-keyframes ascenso {
@@ -91,7 +91,6 @@ section .responsive #foto_izquierda {
 	float: left;
 	width: 100%;
 	padding: 20px;
-	border: 1px solid;
 	margin-left: auto;
   	margin-right: auto;
     background-color: #d5c75f;
@@ -101,7 +100,6 @@ section .responsive #foto_derecha {
 	width: 100%;
 	float: right;
 	padding: 20px;
-	border: 1px solid;
 	margin-left: auto;
   	margin-right: auto;
     background-color: #d5c75f;
@@ -118,17 +116,17 @@ section #imagen_central img {
 section .responsive #foto_izquierda img {
     width: 65%;
     height: auto;
-    box-shadow: 2px 2px 2px 2px #02010a;
-  	-webkit-box-shadow: 2px 2px 2px #02010a;
-  	-moz-box-shadow: 2px 2px 2px #02010a;
+    box-shadow: 2px 2px 2px 2px #82c3a6;
+  	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+  	-moz-box-shadow: 2px 2px 2px #82c3a6;
 }
 
 section .responsive #foto_derecha img {
     width: 65%;
     height: auto;
-    box-shadow: 2px 2px 2px 2px #02010a;
-  	-webkit-box-shadow: 2px 2px 2px #02010a;
-  	-moz-box-shadow: 2px 2px 2px #02010a;
+    box-shadow: 2px 2px 2px 2px #82c3a6;
+  	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+  	-moz-box-shadow: 2px 2px 2px #82c3a6;
 }
 
 section.responsive #foto_izquierda.desc {
@@ -139,6 +137,18 @@ section.responsive #foto_izquierda.desc {
 section.responsive #foto_derecha.desc {
     padding: 15px;
     text-align: center;
+}
+
+#foto_izquierda img:hover{
+  transition: all 1s;
+  transform: rotate(10deg);
+}
+
+#foto_derecha img:hover{
+  transition: all 1s;
+  transform: translate(20px,-5px);
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
 @media only screen and (min-width: 900px){
