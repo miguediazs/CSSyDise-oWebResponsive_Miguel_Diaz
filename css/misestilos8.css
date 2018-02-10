@@ -33,7 +33,7 @@ header {
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	animation: ascenso 3s;
+	/*animation: ascenso 3s;*/
 }
 
 @-webkit-keyframes ascenso {
@@ -152,10 +152,36 @@ section.responsive #foto_derecha.desc {
 }
 
   footer{
-    height: 480px;
+	clear: both;
+	width: 100%;
+	font-size: 1em;
+  	background-color: #C6d5c5;
+  	border-radius: 0 0 10px 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+  footer #contacto{
+    width: 95%;
   }
+
+  footer #terminos{
+    width: 95%;
+    float: left;
+    padding-left: 5%;
+  }
+
+  footer #redes{
+    width: 95%;
+    float: left;
+    padding-left: 5%;
+  }
+
+  footer #derechos{
+    width: 95%;
+    float: left;
+    padding-left: 5%;
+ }
 
 @media only screen and (min-width: 900px){
     section .responsive #foto_izquierda, 
