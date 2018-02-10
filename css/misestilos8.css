@@ -156,13 +156,13 @@ section.responsive #foto_derecha.desc {
     display: flex;
     flex-direction: column;
   }
-}
 
 @media only screen and (min-width: 900px){
     section .responsive #foto_izquierda, 
     section .responsive #foto_derecha {
      	width: 50%; 
     }
+}
 
 @media only screen and (max-width: 899px){
 	section .responsive #foto_izquierda, 
