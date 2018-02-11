@@ -10,8 +10,9 @@ figure, figcaption, hgroup {
     box-sizing: border-box;
 }
 
+/* Contenido para Desktop */
+
 body {
-	align-items: center;
 	background-color: #02010a;
 	font-family: 'Dancing Script', cursive;
 }
@@ -33,18 +34,18 @@ header {
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	/*animation: ascenso 3s;*/
+	/*animation: animacion 3s;*/
 }
 
-@-webkit-keyframes ascenso {
-    0%{margin-top: 100%;}
-    50%{margin-top: -3%;}
+@-webkit-keyframes animacion {
+    0%{margin-top: 150%;}
+    60%{margin-top: -5%;}
     100%{margin-top: 0;}
 }
 
-@-moz-keyframes ascenso{
-  0%{margin-top: 100%;}
-  50%{margin-top: -3%;}
+@-moz-keyframes animacion{
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
   100%{margin-top: 0;}
 } 
 
@@ -106,7 +107,7 @@ section .responsive #foto_derecha {
 }
 
 section #imagen_central img {
-    width: 65%;
+    width: 95%;
     height: auto;
     box-shadow: 2px 2px 2px 2px #02010a;
   	-webkit-box-shadow: 2px 2px 2px #02010a;
@@ -129,12 +130,12 @@ section .responsive #foto_derecha img {
   	-moz-box-shadow: 2px 2px 2px #82c3a6;
 }
 
-section.responsive #foto_izquierda.desc {
+section .responsive #foto_izquierda.desc {
     padding: 15px;
     text-align: center;
 }
 
-section.responsive #foto_derecha.desc {
+section .responsive #foto_derecha.desc {
     padding: 15px;
     text-align: center;
 }
@@ -151,48 +152,88 @@ section.responsive #foto_derecha.desc {
   animation-direction: reverse;
 }
 
-  footer{
-	clear: both;
-	width: 100%;
-	font-size: 1em;
-  	background-color: #C6d5c5;
-  	border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-  footer #contacto{
-    width: 95%;
-  }
-
-  footer #terminos{
-    width: 95%;
-    float: left;
-    padding-left: 5%;
-  }
-
-  footer #redes{
-    width: 95%;
-    float: left;
-    padding-left: 5%;
-  }
-
-  footer #derechos{
-    width: 95%;
-    float: left;
-    padding-left: 5%;
- }
-
 @media only screen and (min-width: 900px){
     section .responsive #foto_izquierda, 
     section .responsive #foto_derecha {
-     	width: 50%; 
-    }
+     	width: 50%;
+	}
+
+	footer {
+		clear: both;
+		width: 100%;
+		font-size: 1em;
+		padding: 0 20px 0 20px;
+	  	background-color: #C6d5c5;
+	  	border-radius: 0 0 10px 10px;
+	    display: flex;
+	    flex-direction: row;
+	}
+
+  footer #contacto{
+    width: 20%;
+    float: left;
+  	text-align: left;
+  }
+
+  footer #terminos{
+    width: 25%;
+  	float: right;
+  	text-align: center;
+  }
+
+  footer #redes{
+    width: 25%;
+  	float: right;
+  	text-align: center;
+  }
+
+  footer #derechos{
+    width: 25%;
+  	float: right;
+  	text-align: right;
+ }
 }
 
-@media only screen and (max-width: 899px){
+/*** Versión para móvil ***/
+
+@media only screen and (max-width: 900px){
 	section .responsive #foto_izquierda, 
     section .responsive #foto_derecha {
         width: 100%;    
     }
+
+	footer {
+		clear: both;
+		width: 100%;
+		font-size: 1em;
+		padding: 0 20px 0 20px;
+	  	background-color: #C6d5c5;
+	  	border-radius: 0 0 10px 10px;
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	}
+
+	footer #contacto{
+	    width: 95%;
+	    text-align: center;
+	}
+
+	footer #terminos{
+	    width: 95%;
+	    padding-left: 5%;
+		text-align: center;  
+	}
+
+	footer #redes{
+	    width: 95%;
+	    padding-left: 5%;
+	    text-align: center;
+	}
+
+	footer #derechos{
+	    width: 95%;
+	    padding-left: 5%;
+	    text-align: center;
+	  }
 }
