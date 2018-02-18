@@ -1,0 +1,150 @@
+/*****      CSS Y DISEÑO RESPONSIVO       *****/
+/***** Diseño de Miguel Angel Diaz Solana *****/
+
+body {
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+}
+
+/********** Formato de Imágenes ************/
+
+#contenido {
+	text-align: center;
+	min-width: 150px;
+	max-width: 900px;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	border: 10px solid gray;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	/*animation: animacion 3s;*/
+}
+
+@-webkit-keyframes animacion {
+    0%{margin-top: 150%;}
+    60%{margin-top: -5%;}
+    100%{margin-top: 0;}
+}
+
+@-moz-keyframes animacion{
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0;}
+} 
+
+header #titulo {
+	float: left;
+	width: 100%;
+	color: white;
+	margin-left: 10%;
+	text-align: left;
+	background-color: #5b7989;
+	text-shadow: #02010a 2px 2px 2px;
+}
+
+header #menu {
+	width: 100%;
+	padding-right: 10%;
+	text-align: right;
+	padding-top: 25px;
+}
+
+.opcion {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: white;
+	text-shadow: #02010a 2px 2px 2px;
+}
+
+.img1 {
+  	-webkit-filter: blur(10px);
+  	filter: blur(10px);
+}
+
+.img2 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img3 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.img4 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img5 {
+   -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.img6 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img7 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.img8 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img9 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.img10 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img11 {
+ -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.img12 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*** Versión para desktop ***/
+
+#paisajes {
+  width: 100%;
+  border: 10px solid #d5c75f;
+  background-color: #d5c75f;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+}
+
+#paisajes #item {
+  width: 33.333333%;
+  float: center;
+}
+
+#paisajes #item .img1,.img2,.img3,.img4,.img5,.img6,
+.img7,.img8,.img9,.img10,.img11,.img12 {
+  height: 130px;
+  float: center;
+  margin: 20px 10px auto;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
