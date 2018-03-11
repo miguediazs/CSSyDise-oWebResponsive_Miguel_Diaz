@@ -1,18 +1,23 @@
 /*****      CSS Y DISEÑO RESPONSIVO       *****/
 /***** Diseño de Miguel Angel Diaz Solana *****/
 
-/********** Imágenes ************/
+* {
+    box-sizing: border-box;
+}
+
 body {
 	background-color: #02010a;
 	font-family: 'Dancing Script', cursive;
 }
+
+/********** Formato de Imágenes ************/
 
 #contenido {
 	text-align: center;
 	min-width: 150px;
 	max-width: 900px;
 	margin-left: auto;
-  	margin-right: auto;
+  margin-right: auto;
 }
 
 header {
@@ -24,7 +29,7 @@ header {
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	/*animation: animacion 3s;*/
+	animation: animacion 3s;
 }
 
 @-webkit-keyframes animacion {
@@ -43,15 +48,15 @@ header #titulo {
 	float: left;
 	width: 100%;
 	color: white;
-	margin: auto;
-	align-items: left;
+	margin-left: 10%;
+	text-align: left;
 	background-color: #5b7989;
 	text-shadow: #02010a 2px 2px 2px;
 }
 
 header #menu {
 	width: 100%;
-	padding-right: 60px;
+	padding-right: 10%;
 	text-align: right;
 	padding-top: 25px;
 }
@@ -63,31 +68,9 @@ header #menu {
 	text-shadow: #02010a 2px 2px 2px;
 }
 
-
-section .paisajes {
-	width: 100px;
-  	height: 600px;
- 	background-color: #d5c75f;
-}
-
-section .paisajes #item {
-	width: 100px;
-}
-
-section .paisajes #item .img0,.img2,.img3,.img4,
-.img5,.img6,.img7,.img8,.img9,.img10,
-.img11,.img12 {
-	    /*height: 187px;*/
-	    width: 100%;
-	    /*margin: 5% 0 0 5%;*/
-}
-
-
 .img1 {
-  	/*-webkit-filter: blur(10px);
-  	filter: blur(10px);*/
-  	-webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  	-webkit-filter: blur(10px);
+  	filter: blur(10px);
 }
 
 .img2 {
@@ -145,63 +128,182 @@ section .paisajes #item .img0,.img2,.img3,.img4,
   filter: grayscale(100%);
 }
 
-/** Versión para móvil **/
-@media only screen and (max-width: 900px){
-	.paisajes {
-		clear: both;
-		width: 100%;
-		font-size: 1em;
-		padding: 0 20px 0 20px;
-	  	background-color: #C6d5c5;
-	  	border-radius: 0 0 10px 10px;
-	    display: flex;
-	    align-items: center;
-	    flex-direction: column;
-	}
-
-	.paisajes #item{
-	    width: 100%;
-	    margin: 0% 0% 2% 0%;
-	  }
-
-	  .paisajes #item .img1,.img2,.img3,
-	  .img4,.img5,.img6,.img7,.img8,
-	  .img9,.img10,.img11,.img12 {
-	    /*height: 187px;*/
-	    width: 100%;
-	    /*margin: 5% 0 0 5%;*/
-	  }
-}
-
 /*** Versión para desktop ***/
-@media only screen and (min-width: 900px){
-.paisajes {
+
+#contenido {
+  text-align: center;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
   width: 100%;
-  /*height: 600px;*/
-  background-color: #d5c75f;
+  margin: auto;
+  display: flex;
+  border: 10px solid gray;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  /*animation: animacion 3s;*/
 }
 
-/*
-section #img-paisajes
-{
+@-webkit-keyframes animacion {
+    0%{margin-top: 150%;}
+    60%{margin-top: -5%;}
+    100%{margin-top: 0;}
+}
+
+@-moz-keyframes animacion{
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0;}
+} 
+
+header #titulo {
+  float: left;
   width: 100%;
-  height: 900px;
+  color: white;
+  margin-left: 10%;
+  text-align: left;
+  background-color: #5b7989;
+  text-shadow: #02010a 2px 2px 2px;
+}
+
+header #menu {
+  width: 100%;
+  padding-right: 10%;
+  text-align: right;
+  padding-top: 25px;
+}
+
+.opcion {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  text-shadow: #02010a 2px 2px 2px;
+}
+
+#paisajes {
+  width: 100%;
+  border: 10px solid #d5c75f;
   background-color: #d5c75f;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
 }
-*/
-
- .paisajes #item {
-  width: 33.3%;
-  float: left;
+  
+#paisajes #item {
+  width: 33.333333%;
+  float: center;
 }
 
- .paisajes #item .img1,.img2,.img3,.img4,
- .img5,.img6,.img7,.img8,.img9,.img10,
- .img11,.img12 {
-  /*height: 130px;*/
-  float: left;
-  margin: 3px 0 0 3px;
+#paisajes #item .img1,.img2,.img3,.img4,.img5,.img6,
+.img7,.img8,.img9,.img10,.img11,.img12 {
+  height: 130px;
+  float: center;
+  margin: 20px 10px auto;
   -webkit-box-shadow: 2px 2px 2px #02010a;
   -moz-box-shadow: 2px 2px 2px #02010a;
-	}
 }
+
+footer
+{
+  width: 100%;
+  height: 200px;
+  clear: both;
+  font-size: 80%;
+  align-items: center;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+
+#contacto{
+    width: 25%;
+    padding-left: 7%;
+    float: left;
+}
+
+#terminos{    
+  width: 25%;
+  float: left;
+  padding-left: 5%;
+}
+
+#redes{
+ width: 23%;
+ float: left;
+ padding-left: 5%;
+ text-align: left;
+}
+
+#derechos{
+ width: 25%;
+ float: left;
+ padding-left: 0%;
+}
+
+/** Versión para móvil **/
+@media only screen and (max-width: 900px){
+ #paisajes {
+    clear: both;
+    width: 100%;
+    font-size: 1em;
+    padding: 0 20px 0 20px;
+    border: 10px solid #d5c75f;
+    background-color: #d5c75f;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #paisajes #item{
+      width: 80%;
+      margin: 0% 0% 2% 0%;
+      /*float: center;*/
+    }
+
+#paisajes #item .img1,.img2,.img3,.img4,.img5,.img6,
+.img7,.img8,.img9,.img10,.img11,.img12 {
+  /*height: 290px;*/
+  width: 100%;
+  float: center;
+  margin: 10px 10px auto;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+footer
+{
+  width: 100%;
+  height: 600px;
+  clear: both;
+  font-size: 80%;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contacto{
+    width: 95%;
+}
+
+#terminos{    
+  width: 95%;
+}
+
+#redes{
+ width: 95%;
+ text-align: center;
+}
+
+#derechos{
+ width: 95%;
+}
+
+}
+
