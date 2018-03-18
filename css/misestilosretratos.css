@@ -29,7 +29,7 @@ header {
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	/*animation: animacion 3s;*/
+	animation: animacion 3s;
 }
 
 @-webkit-keyframes animacion {
